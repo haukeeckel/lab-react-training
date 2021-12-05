@@ -1,6 +1,3 @@
-import imgVisa from '../assets/images/visa.png';
-import imgMaster from '../assets/images/master-card.svg';
-
 function CreditCard({
   type,
   number,
@@ -13,9 +10,9 @@ function CreditCard({
 }) {
   let cardType = '';
   if (type === 'Visa') {
-    cardType = imgVisa;
+    cardType = './assets/images/visa.png';
   } else if (type === 'Master Card') {
-    cardType = imgMaster;
+    cardType = './assets/images/master-card.svg';
   }
 
   let cardNumber = number.replace(

@@ -1,9 +1,14 @@
 import React from 'react';
 import BoxColor from './components/BoxColor';
+import Carousel from './components/Carousel';
+import ClickablePicture from './components/ClickablePicture';
 import CreditCard from './components/CreditCard';
+import Dice from './components/Dice';
 import DriverCard from './components/DriverCard';
 import Greetings from './components/Greetings';
 import IdCard from './components/IdCard';
+import LikeButton from './components/LikeButton';
+import NumbersTable from './components/NumbersTable';
 import Random from './components/Random';
 import Rating from './components/Rating';
 
@@ -93,8 +98,8 @@ function App() {
         <Rating>4</Rating>
         <Rating>5</Rating>
       </div>
+
       {/* Iteration 7 */}
-      {/* TODO Style */}
       <div className="w-full grid justify-items-center grid-cols-1 lg:grid-cols-2">
         <DriverCard
           name="Travis Kalanick"
@@ -115,6 +120,43 @@ function App() {
           }}
         />
       </div>
+
+      {/* Iteration 8 */}
+      {/* TODO Style */}
+      <div>
+        <LikeButton />
+        <LikeButton />
+      </div>
+
+      {/* Iteration 9 */}
+      {/* TODO Style */}
+      <div>
+        <ClickablePicture
+          img="./assets/images/maxence.png"
+          imgClicked="./assets/images/maxence-glasses.png"
+        />
+      </div>
+
+      {/* Iteration 10 */}
+      {/* TODO Style */}
+      <div>
+        <Dice />
+      </div>
+
+      {/* Iteration 11 */}
+      {/* TODO Style */}
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+
+      {/* Iteration 12 */}
+      {/* TODO Style */}
+      <NumbersTable limit={12} />
     </div>
   );
 }
